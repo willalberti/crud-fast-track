@@ -2,12 +2,12 @@
 Serviço para criação de ordem. Publica a mensagem de criação no broker kafka e gavar registro de criação em banco local H2
 
 # 2 Operações   
-`create` cria uma ordem e prublica um evento num tópico
-`delete` deleta uma ordem
-`findById` localiza uma orderm por id
-`list` lista todas as ordens
-`search` pocura ordems pela descrição
-`update` atualiza uma ordem.
+`create` cria uma ordem e prublica um evento num tópico  
+`delete` deleta uma ordem  
+`findById` localiza uma orderm por id  
+`list` lista todas as ordens  
+`search` pocura ordems pela descrição  
+`update` atualiza uma ordem.  
 
 # 3 Detalhamento da operação `create`
 ## 3.1 Diagramas classes  
