@@ -1,6 +1,6 @@
 # 1 MS-ORDER  
-Serviço para criação de ordem. Publica a mensagem de criação no broker kafka e gavar registro de criação em banco local H2.
-Arquitetura Hexagonal.
+Serviço para criação de ordem. Publica a mensagem de criação no broker kafka e gavar registro de criação em banco local H2.  
+> Utilizado a Arquitetura Hexagonal na implementação.  
 
 # 2 Operações   
 `create` cria uma ordem e prublica um evento num tópico  
