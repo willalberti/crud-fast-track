@@ -1,7 +1,5 @@
 package com.vivo.kafkaproduce.adapter.out;
 
-import java.util.concurrent.ExecutionException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -24,8 +22,8 @@ public class PublishEventOrderBroker implements SendOrderPortOut {
 	@Override
 	public void send(OrderDto orderDto) throws Exception {
     	try {
-			kafkaTemplate.send(pedidoTopic, String.valueOf(orderDto.getId()), new Gson().toJson(orderDto).toString()).get();
-		} catch (InterruptedException | ExecutionException e) {
+			kafkaTemplate.send(pedidoTopic, String.valueOf(orderDto.getId()), new Gson().toJson(orderDto)).get();
+		} catch (Exception e) {
 			throw new Exception("Erro ao publicar evento de criação da ordem. Causa: "+ e.getMessage());
 		}
 		
