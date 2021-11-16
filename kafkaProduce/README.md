@@ -7,7 +7,7 @@ Serviço para criação de ordem. Publica a mensagem de criação no broker kafk
 `delete` deleta uma ordem  
 `findById` localiza uma orderm por id  
 `list` lista todas as ordens  
-`search` pocura ordems pelos atributos
+`search` pocura ordems pelos atributos  
 `update` atualiza uma ordem.  
 
 # 3 Detalhamento da operação `create`
@@ -43,7 +43,7 @@ Response body
 ```
 
 ##### 3.3.3 Response erro
-* Erro: `http.status=500`, `http.status=404`, `http.status=403`, `http.status=401` 
+* Erro: `http.status=400`, `http.status=404`, `http.status=403`, `http.status=401` 
  
 Response body  
 
@@ -59,7 +59,7 @@ Response body
 * [http://localhost:9999/h2-console](http://localhost:9999/h2-console)  
 
 # 5 Swagguer-ui  
-* [http://localhost:9999/swagger-ui.html](http://localhost:9999/swagger-ui.html)  
+* [http://localhost:9999/swagger-ui/index.html](http://localhost:9999/swagger-ui/index.html)  
 
 # 5 Swagguer
 * [http://localhost:9999/v2/api-docs](http://localhost:9999/v2/api-docs)  
